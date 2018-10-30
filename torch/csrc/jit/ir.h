@@ -692,10 +692,10 @@ struct Block {
     n->insertAfter(output_);
     return n;
   }
-  Graph * owningGraph() {
+  Graph * owningGraph() const {
     return graph_;
   }
-  Node * owningNode() {
+  Node * owningNode() const {
     return owning_node_;
   }
   // clone all inputs, nodes, and outputs from src and append them
